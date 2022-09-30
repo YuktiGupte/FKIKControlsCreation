@@ -1,7 +1,7 @@
 from gettext import translation
 import maya.cmds as cmds
 #intended operation: user selects any number of joint(s) in Maya, and runs the below script.
-
+#Authot: Yukti Gupte
 #global dictionary with format - jointName : jointCtrlName
 controlDict = {}
 #argument needed: selected joint(s)
