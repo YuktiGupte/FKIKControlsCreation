@@ -1,0 +1,3 @@
+
+JOINT_SUFFIX = "_j"
+CONTROL_SUFFIX = "_ctrl"

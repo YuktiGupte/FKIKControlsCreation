@@ -1,7 +1,7 @@
 from gettext import translation
 import maya.cmds as cmds
 #intended operation: user selects any number of joint(s) in Maya, and runs the below script.
-#Authot: Yukti Gupte
+#Author: Yukti Gupte
 #global dictionary with format - jointName : jointCtrlName
 controlDict = {}
 #argument needed: selected joint(s)
@@ -94,7 +94,14 @@ def ControlsCleanUp():
     else:
         print('No joints were selected')
 
-#Calling all the functions in order
-CreateControlCurve()
-CreateConstraint()
-ControlsCleanUp()
+
+def main():
+    #Calling all the functions in order
+    CreateControlCurve()
+    CreateConstraint()
+    ControlsCleanUp()
+    
+    
+if __name__ == '__main__':
+    # Execute when the module is not initialized from an import statement.
+    main()
